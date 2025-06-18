@@ -1,0 +1,71 @@
+<div class="author-profile">
+  {% if site.author.picture %}
+    <img src="{{ site.baseurl }}{{ site.author.picture }}" alt="{{ site.author.name }}" class="author-profile-img">
+  {% elsif site.author.avatar %}
+    <img src="{{ site.baseurl }}{{ site.author.avatar }}" alt="{{ site.author.name }}" class="author-profile-img">
+  {% endif %}
+
+  <h2 class="author-profile-name">
+    {% if site.author.name %}
+      {{ site.author.name }}
+    {% else %}
+      Author
+    {% endif %}
+  </h2>
+
+  {% if site.author.bio %}
+    <p class="author-profile-bio">{{ site.author.bio }}</p>
+  {% endif %}
+
+  <div class="author-profile-links">
+    {# Puedes añadir aquí enlaces a tus redes sociales si las defines en _config.yml #}
+    {% if site.author.linkedin %}
+      <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    {% endif %}
+    {% if site.author.github %}
+    {% endif %}
+    {# Agrega más enlaces si los necesitas (ej. Twitter, email, etc.) #}
+  </div>
+</div>
+
+<style>
+  /* Estilos básicos para el recuadro del autor (puedes ajustar esto) */
+  .author-profile {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .author-profile-img {
+    border-radius: 50%; /* Para hacerla circular */
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Para que la imagen no se distorsione */
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #ddd;
+  }
+  .author-profile-name {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .author-profile-bio {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .author-profile-links a {
+    margin: 0 10px;
+    color: #007bff; /* Color de enlace, puedes cambiarlo */
+    text-decoration: none;
+  }
+  .author-profile-links a:hover {
+    text-decoration: underline;
+  }
+</style>

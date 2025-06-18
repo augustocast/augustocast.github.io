@@ -1,15 +1,13 @@
 ---
-layout: post
+layout: page
 title: "About"
-author: "Chester"
+author: "Augusto"
 permalink: /about/
+author_profile: true
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
-
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
-
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
-
-Thanks for reading!
+Data Engineer, especializado en el diseño y gestión de productos de Machine Learning. Con 8 años de experiencia en empresas de software, consultoría, academia y sector público.  
+<br>
+Me motiva desarrollar soluciones de calidad e impacto. Tengo un perfil analítico, me encantan las buenas prácticas de código y mi foco siempre está en detectar las necesidades del negocio para construir las mejores soluciones técnicas.<br>
+<br>
+Actualmente, lidero proyectos de Image Recognition para el sector retail y personalización de Ads con Generative AI.

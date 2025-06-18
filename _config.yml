@@ -1,17 +1,20 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+title:          Beyond The Notebook
+description:    "Augusto Castro"
+url:            "https://augustocast.github.io"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Augusto Castro
+  url:          https://augustocast.github.io
+  email:        castroaugusto3@gmail.com
+  twitter:      augustocastr0
+  linkedin:     augustocast
+  picture:      /assets/foto_cv.jpg
+  github:       augustocast
 
 # Build settings
 markdown:       kramdown
