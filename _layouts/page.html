@@ -32,7 +32,6 @@ layout: default
 {% endif %}
 
 <div class="pagination">
-  {# La paginación no es común para páginas estáticas, pero se mantiene si la quieres #}
   {% if page.next.url %}
     <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
   {% endif %}
