@@ -51,7 +51,7 @@ Luego de algunas dudas para decidir si una nota debía ir al directorio de Área
 
 El argumento presentado por Forte es un tanto reduccionista: si uno toma buenas notas, y luego puede recuperarlas, es posible "recordar" todo lo que se leyó y generar un segundo cerebro. Parece una spin-off de la obsesión por el orden de [Marie Kondo](https://www.goodreads.com/book/show/37864838-la-magia-del-orden) pero, sinceramente, no me importa. Una [mala regla](https://www.sciencedirect.com/science/article/abs/pii/030439328390051X) suele ser mejor que una discrecionalidad buena.  Tengo un método simple para tomar notas, fácil de mantener y con buen mecanismo de búsqueda.
 
-## El soporte
+# El soporte
 Un buen soporte y estamos hechos. Elegí Obsidian porque:
 1. Es portable entre dispositivos
 2. Su interfaz es simple 
@@ -60,13 +60,12 @@ Un buen soporte y estamos hechos. Elegí Obsidian porque:
 
  No voy a meterme en este post en el Superclásico entre [Obsidian y Notion](https://www.reddit.com/r/productivity/comments/zvojcq/notion_vs_obsidian/) porque el que mucho abarca poco aprieta. No sabía usar ninguno de los dos y quise focalizarme en tomar notas, no en aprender a usar una nueva herramienta, por lo que me quedé con la más simple. Por ahora, no me arrepiento.
 
-## Prototyping Mindset
+# Prototyping Mindset
 Sigo leyendo [posts](https://x.com/AlanDaitch/status/1935106507374272671), [blogs](https://www.cuatroveintiuno.com/soberania-cognitiva-introduccion-autonomia-psiquica/) y [papers](https://arxiv.org/abs/2506.08872). Me ataca la ansiedad de perder mi soberanía cognitiva y la capacidad de memorizar. Para lidiar con eso, escribo. Ahora con el PARA Method, que me ayuda a tener mis notas bien organizadas. Escribir me sirve para procesar, pensar, jerarquizar y organizar. Para que mis notas sean buenas, a veces pienso en mi yo del futuro.
 
 Como no me alcanza, voy a practicar mi [prototyping mindset](https://benholliday.medium.com/the-prototyping-mindset-320de6ec79c8). Escribo pensando en salir a producción. Esto implica hacerlo rápido, con el objetivo de aprender algo e iterar. Si sale bien, voy a estar escribiendo sobre esto. Si sale mal, aprendí un montón de cosas.
 
 Mi compromiso: mis posts los escribo yo, no los escribe Chat GPT. Si no no me sirven de nada.
-
 
 
 ---
