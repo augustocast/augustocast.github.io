@@ -61,3 +61,14 @@
     margin: 0;
   }
 }
+
+/* Modifica esta parte en tu archivo CSS */
+
+.post-description {
+  text-align: center; /* Centra el texto */
+  color: #adb5bd;     /* Un gris más claro que #6c757d. Puedes experimentar con #ced4da para un gris aún más claro */
+  font-size: 1.6em;    /* Hace el texto más grande. Experimenta con valores como 1.4em, 1.6em, etc. */
+  font-weight: 300;    /* Mantiene un peso de fuente ligero para un estilo de subtítulo */
+  margin-top: 10px;   /* Ajusta la distancia con el título */
+  margin-bottom: 20px; /* Ajusta la distancia con el contenido del post */
+}
