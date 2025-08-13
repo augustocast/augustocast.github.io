@@ -3,7 +3,7 @@ layout: post
 title: "¿Alguna vez sentiste que el celular te escuchó?"
 author: "Augusto"
 date: 2025-08-13 00:52:27 -0300
-tags: [prototyping, notes, learning, obsidian]
+tags: [ads, cluster, data]
 description: "Te cuento 3 razones por las que esto no pasa"
 sticky: true
 ---
