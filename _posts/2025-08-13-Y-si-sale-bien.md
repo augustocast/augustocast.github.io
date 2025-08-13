@@ -2,7 +2,7 @@
 layout: post
 title: "¿Y si sale bien?"
 author: "Augusto"
-date: 2025-06-19 00:52:27 -0300
+date: 2025-08-13 00:52:27 -0300
 tags: [prototyping, notes, learning, obsidian]
 description: "Construyendo mi Second Brain y un Prototyping Mindset"
 sticky: true
@@ -13,7 +13,7 @@ Curioso, nerd o control-freak. No estoy seguro de por qué, pero me la paso leye
 
 # Nativo digital
 
-Mi primer recuerdo en esta actitud compulsiva, Encarta 2000. Una de los pocos pocos productos de Microsoft que realmente valen la pena[^1].  Misma implementación, mejor interfaz que una enciclopedia de papel. En vez de ordenar los artículos en orden alfabético, se agrupaban en temas, lo cual resultaba fabuloso para un chico de 8 años. Me la pasaba aprendiendo sobre países de los que no sabía ni el nombre, personalidades históricas y animales.
+Mi primer recuerdo relacionado con esta actitud compulsiva, Encarta 2000. Una de los pocos pocos productos de Microsoft que realmente valen la pena[^1].  Misma implementación, mejor interfaz que una enciclopedia de papel. En vez de ordenar los artículos en orden alfabético, se agrupaban en temas, lo cual resultaba fabuloso para un chico de 8 años. Me la pasaba aprendiendo sobre países de los que no sabía ni el nombre, personalidades históricas y animales.
 
 
 ![Encarta](/assets/2025-06-19-encarta-es.png)
@@ -66,7 +66,7 @@ Un buen soporte para implementar el PARA Method y estamos hechos. Elegí [Obsidi
 
 # Prototyping Mindset
 
-Muy bueno el PARA Method, pero no me alcanza para cambiar mis hábitos. Quiero construir un *Second Brain*, que me permita recordar todo lo que leí y valió la pena. O por lo menos una parte. Para eso tengo que seguir escribiendo, y viendo si lo que escribo es un Proyecto, Área o Recurso. Voy a ejercitar mi [prototyping mindset](https://benholliday.medium.com/the-prototyping-mindset-320de6ec79c8). Escribo pensando en salir a producción. Esto implica hacerlo rápido, con el objetivo de aprender algo e iterar. Si sale bien, voy a estar escribiendo sobre esto. Si sale mal, aprendí un montón de cosas.
+Muy bueno el PARA Method, pero no me alcanza para cambiar mis hábitos. Quiero construir un *Second Brain*, que me permita recordar todo lo que leí y valió la pena. O por lo menos una parte. Para eso tengo que seguir escribiendo, y viendo si lo que escribo es un Proyecto, Área o Recurso. Voy a ejercitar mi [prototyping mindset](https://benholliday.medium.com/the-prototyping-mindset-320de6ec79c8). Escribir pensando en salir a producción. Esto implica hacerlo rápido, con el objetivo de aprender algo e iterar. Si sale bien, voy a estar escribiendo sobre esto. Si sale mal, aprendí un montón de cosas.
 
 Mi compromiso: mis posts los escribo yo, no los escribe Chat GPT. Si no no me sirven de nada.
 
