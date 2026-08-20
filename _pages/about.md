@@ -4,6 +4,7 @@ title: "About"
 author: "Augusto"
 permalink: /about/
 author_profile: true
+translation_url: /en/about/
 ---
 
 Data Engineer, especializado en el diseño y gestión de productos de Machine Learning. Con 8 años de experiencia en empresas de software, consultoría, academia y sector público.  

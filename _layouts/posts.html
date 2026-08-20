@@ -2,15 +2,21 @@
 layout: default
 ---
 
+{% assign current_lang = page.lang | default: site.default_lang %}
+
 <div class="catalogue">
   {% for post in site.posts %}
-    {% if post.sticky %}
+    {% if post.sticky and post.lang == current_lang %}
       {% include catalogue_item.html sticky='true' %}
     {% endif %}
   {% endfor %}
 
   {% for post in paginator.posts %}
-    {% include catalogue_item.html %}
+    {% unless post.sticky %}
+      {% if post.lang == current_lang %}
+        {% include catalogue_item.html %}
+      {% endif %}
+    {% endunless %}
   {% endfor %}
 </div>
 

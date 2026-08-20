@@ -1,0 +1,33 @@
+.cv-page {
+  h2 {
+    border-bottom: 2px solid $grey-2;
+    margin-top: 2.5rem;
+    padding-bottom: .4rem;
+  }
+
+  h3 {
+    border-left: .2rem solid $accent;
+    margin-top: 1.75rem;
+    margin-bottom: .25rem;
+    padding-left: .8rem;
+  }
+
+  ul {
+    margin-top: .5rem;
+    padding-left: 2.2rem;
+  }
+
+  li {
+    margin-bottom: .35rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid $grey-2;
+    margin: 2rem 0;
+  }
+
+  .btn {
+    margin: 1rem 0 2rem;
+  }
+}

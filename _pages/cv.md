@@ -1,15 +1,16 @@
 ---
-layout: page
+layout: cv
 title: "Curriculum Vitae"
 author: "Augusto"
 permalink: /cv/
+translation_url: /en/cv/
 ---
 
 Data Engineer, especializado en el diseño y gestión de productos de Machine Learning. Con 8 años de experiencia en empresas de software, consultoría, academia y sector público.  
 Enfocado en potenciar equipos y desarrollar soluciones de calidad, con alto impacto en el negocio. 
 
 
-[Descargar CV](/assets/cv-Castro-Augusto-06-2025.pdf){:.btn .btn--success}
+[{{ site.data.i18n.es.cv.download }}](/assets/cv-Castro-Augusto-06-2025.pdf){:.btn .btn--success}
 
 ## Experiencia Laboral
 

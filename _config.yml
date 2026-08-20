@@ -3,6 +3,9 @@ title:          Beyond The Notebook
 description:    "Augusto Castro"
 url:            "https://augustocast.github.io"
 
+# i18n
+default_lang:   es
+
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
@@ -39,6 +42,21 @@ paginate:       5
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: es
+  - scope:
+      path: "_posts/en"
+    values:
+      lang: en
+  - scope:
+      path: "_pages/en"
+    values:
+      lang: en
 
 # Disqus (Set to your disqus id)
 disqus:         jekyll-tale

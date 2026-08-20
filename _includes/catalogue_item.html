@@ -1,9 +1,11 @@
+{% assign current_lang = post.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[current_lang] %}
 <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
   <div>
     {% if include.sticky == 'true' %}
-    <span class="catalogue-pinned">Pinned &middot;</span>
+    <span class="catalogue-pinned">{{ t.catalogue.pinned }} &middot;</span>
     {% endif %}
-    <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+    <time datetime="{{ post.date }}" class="catalogue-time">{% include localized-date.html date=post.date lang=current_lang %}</time>
     <h1 class="catalogue-title">{{ post.title }}</h1>
     <div class="catalogue-line"></div>
 

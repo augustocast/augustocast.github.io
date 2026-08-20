@@ -14,21 +14,29 @@ footer,
 }
 
 .nav {
-  box-shadow: 0 2px 2px -2px $shadow-color;
-  overflow: auto;
+  background-color: $white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
   &-container {
-    margin: 1rem auto;
-    position: relative;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem 1rem;
+    margin: 0 auto;
+    padding: 1rem 0;
     text-align: center;
   }
 
   &-title {
     @include transition(all .2s ease-out);
-    color: $default-color;
+    color: $default-shade;
     display: inline-block;
+    font-size: 1.3rem;
     margin: 0;
-    padding-right: .2rem;
 
     &:hover,
     &:focus {
@@ -36,9 +44,17 @@ footer,
     }
   }
 
+  &-right {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem 1.25rem;
+    justify-content: center;
+  }
+
   ul {
     list-style-type: none;
-    margin: 1rem 0 0;
+    margin: 0;
     padding: 0;
     text-align: center;
   }
@@ -47,8 +63,8 @@ footer,
     @include transition(all .2s ease-out);
     color: $default-color;
     display: inline-block;
-    opacity: .6;
-    padding: 0 2rem 0 0;
+    opacity: .7;
+    padding: 0 1.25rem 0 0;
 
     &:last-child {
       padding-right: 0;
@@ -69,14 +85,39 @@ footer,
 @media (min-width: 600px) {
   .nav {
     &-container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
       text-align: left;
     }
+  }
+}
 
-    ul {
-      bottom: 0;
-      position: absolute;
-      right: 0;
-    }
+.lang-switch {
+  border: 1px solid $grey-2;
+  border-radius: 999px;
+  display: inline-flex;
+  font-family: $sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  overflow: hidden;
+
+  a,
+  span {
+    color: $default-tint;
+    display: inline-block;
+    letter-spacing: .05em;
+    padding: .3rem .7rem;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: $grey-3;
+    text-decoration: none;
+  }
+
+  .is-active {
+    background-color: $accent;
+    color: $white;
   }
 }
 

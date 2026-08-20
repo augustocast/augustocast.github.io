@@ -1,0 +1,48 @@
+.btn {
+  @include transition(all .15s ease-out);
+  border: .125rem solid transparent;
+  border-radius: $card-radius;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $sans-serif;
+  font-size: .95rem;
+  font-weight: 700;
+  padding: .65rem 1.4rem;
+  text-align: center;
+  text-decoration: none;
+
+  &--primary {
+    background-color: $accent;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-dark;
+      text-decoration: none;
+    }
+  }
+
+  &--success {
+    background-color: $success;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: $success-dark;
+      text-decoration: none;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    border-color: $accent;
+    color: $accent;
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

@@ -10,6 +10,15 @@ $blue: #4a9ae1 !default;
 $shadow-color: rgba(0, 0, 0, .2) !default;
 $code-color: #bf616a !default;
 
+// Accent / components (added for the professional redesign)
+$accent: $blue !default;
+$accent-dark: #2f78c4 !default;
+$success: #3fa66f !default;
+$success-dark: #2f8557 !default;
+$card-radius: .6rem !default;
+$card-shadow: 0 2px 10px rgba(0, 0, 0, .06) !default;
+$card-shadow-hover: 0 10px 24px rgba(0, 0, 0, .1) !default;
+
 // Fonts
 $serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif !default;
 $serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;

@@ -1,0 +1,96 @@
+es:
+  nav:
+    posts: "Posts"
+    posts_url: "/posts/"
+    reads: "Lecturas"
+    reads_url: "/lecturas/"
+    links: "Links"
+    links_url: "/links/"
+    cv: "CV"
+    cv_url: "/cv/"
+    home_url: "/"
+  post_info:
+    written_by: "Escrito por"
+    "on": "el"
+  pagination:
+    top: "Volver arriba"
+  catalogue:
+    pinned: "Destacado"
+  home:
+    tagline: "Data Engineer & ML Product Lead"
+    bio: >
+      Data Engineer especializado en el <strong>diseño y gestión de productos de Machine Learning</strong>,
+      con <strong>8 años de experiencia</strong> en empresas de software, consultoría, academia y sector público.
+    bio_extra: >
+      Motivado por desarrollar soluciones de calidad e impacto. Perfil analítico, fanático de las
+      <strong>buenas prácticas de código</strong>, de prototipar pensando en producción, y enfocado en
+      <strong>detectar las necesidades del negocio</strong> para construir las mejores soluciones técnicas.
+      Actualmente, liderando proyectos de <strong>Image Recognition</strong> para retail y personalización
+      de Ads con <strong>Generative AI</strong>.
+    cta_cv: "Ver CV"
+    cta_posts: "Ver posts"
+    latest_posts: "Últimos posts"
+    no_posts: "Todavía no hay posts publicados."
+  cv:
+    download: "Descargar CV"
+  reads:
+    empty: "Aún no hay lecturas marcadas. ¡Pronto habrá más!"
+  notfound:
+    title: "404: Página no encontrada"
+    message: "No pudimos encontrar la página que buscabas."
+    back_home: "Volver al inicio"
+  footer:
+    made_with: "Hecho con Jekyll usando el theme"
+  lang_switch:
+    aria: "Cambiar idioma"
+  date:
+    format: "day_month_year"
+    months: ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+
+en:
+  nav:
+    posts: "Posts"
+    posts_url: "/en/posts/"
+    reads: "Reads"
+    reads_url: "/en/reads/"
+    links: "Links"
+    links_url: "/en/links/"
+    cv: "CV"
+    cv_url: "/en/cv/"
+    home_url: "/en/"
+  post_info:
+    written_by: "Written by"
+    "on": "on"
+  pagination:
+    top: "Back to top"
+  catalogue:
+    pinned: "Pinned"
+  home:
+    tagline: "Data Engineer & ML Product Lead"
+    bio: >
+      Data Engineer specialized in the <strong>design and management of Machine Learning products</strong>,
+      with <strong>8 years of experience</strong> across software companies, consulting, academia and the public sector.
+    bio_extra: >
+      Motivated by building solutions with real quality and impact. Analytical profile, big believer in
+      <strong>good coding practices</strong> and prototyping with production in mind, focused on
+      <strong>identifying business needs</strong> to build the best technical solutions. Currently leading
+      <strong>Image Recognition</strong> projects for retail and Ads personalization with <strong>Generative AI</strong>.
+    cta_cv: "View CV"
+    cta_posts: "See posts"
+    latest_posts: "Latest posts"
+    no_posts: "No posts published yet."
+  cv:
+    download: "Download CV"
+  reads:
+    empty: "No reads tagged yet. More coming soon!"
+  notfound:
+    title: "404: Page not found"
+    message: "We couldn't find the page you were looking for."
+    back_home: "Back home"
+  footer:
+    made_with: "Made with Jekyll using the"
+  lang_switch:
+    aria: "Switch language"
+  date:
+    format: "month_day_year"
+    months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]

@@ -2,17 +2,17 @@
 layout: page
 title: Reseñas
 permalink: /lecturas/
+translation_url: /en/reads/
 ---
 
-<div class="catalogue">
-  {% comment %} Itera sobre todos los posts y filtra por el tag 'lecturas' {% endcomment %}
-  {% assign filtered_posts = site.posts | where_exp:"post", "post.tags contains 'Lecturas'" %}
+{% assign filtered_posts = site.posts | where_exp:"post", "post.tags contains 'Lecturas'" | where: "lang", "es" %}
 
+<div class="catalogue">
   {% if filtered_posts.size > 0 %}
     {% for post in filtered_posts %}
-      {% include catalogue_item.html %} {# Asume que tienes un include llamado catalogue_item.html para mostrar cada post #}
+      {% include catalogue_item.html %}
     {% endfor %}
   {% else %}
-    <p>Aún no hay lecturas marcadas. ¡Pronto habrá más!</p>
+    <p class="home-empty">{{ site.data.i18n.es.reads.empty }}</p>
   {% endif %}
 </div>

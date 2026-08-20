@@ -5,22 +5,13 @@ layout: default
 {% assign current_lang = page.lang | default: site.default_lang %}
 {% assign t = site.data.i18n[current_lang] %}
 
-<div class="post">
-  {% if page.author_profile %}
-    {% include author-profile.html %}
-  {% endif %}
-
+<div class="post cv-page">
   <div class="post-info">
     <span>{{ t.post_info.written_by }}</span>
     {% if page.author %}
         {{ page.author }}
     {% else %}
         {{ site.author.name }}
-    {% endif %}
-
-    {% if page.date %}
-      <br>
-      <span>{{ t.post_info.on }}&nbsp;</span><time datetime="{{ page.date }}">{% include localized-date.html date=page.date lang=current_lang %}</time>
     {% endif %}
   </div>
 
@@ -29,10 +20,6 @@ layout: default
 
   {{ content }}
 </div>
-
-{% if page.comments %}
-  {% include disqus_comments.html %}
-{% endif %}
 
 <div class="pagination">
   <a href="#" class="top">{{ t.pagination.top }}</a>

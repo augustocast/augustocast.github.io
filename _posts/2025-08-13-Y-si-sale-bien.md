@@ -6,6 +6,7 @@ date: 2025-08-13 00:52:27 -0300
 tags: [prototyping, notes, learning, obsidian]
 description: "Construyendo mi Second Brain y un Prototyping Mindset"
 sticky: true
+translation_url: /en/2025-08-13-what-if-it-goes-well/
 ---
 
 

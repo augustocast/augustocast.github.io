@@ -2,134 +2,56 @@
 layout: default
 ---
 
-<div class="home-container">
-  <div class="profile-sidebar">
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[current_lang] %}
 
-
+<section class="hero">
+  <div class="hero-inner">
     {% if site.author.picture %}
-      <img src="{{ site.baseurl }}{{ site.author.picture }}" alt="{{ site.author.name }}" class="profile-sidebar-img">
-        <h2 class="profile-sidebar-name">
-      {% if site.author.name %}
-        {{ site.author.name }}
-                    <br>
-      {% else %}
-        Author
-                    <br>
-      {% endif %}
-
-        <div class="post-line"></div>
-    </h2>
+      <img src="{{ site.baseurl }}{{ site.author.picture }}" alt="{{ site.author.name }}" class="hero-photo">
     {% elsif site.author.avatar %}
-      <img src="{{ site.baseurl }}{{ site.author.avatar }}" alt="{{ site.author.name }}" class="profile-sidebar-img">
+      <img src="{{ site.baseurl }}{{ site.author.avatar }}" alt="{{ site.author.name }}" class="hero-photo">
     {% endif %}
 
-    {% if site.author.bio %}
-      <p class="profile-sidebar-bio">{{ site.author.bio }}</p>
-    {% endif %}
+    <div class="hero-content">
+      <h1 class="hero-name">{{ site.author.name }}</h1>
+      <p class="hero-tagline">{{ t.home.tagline }}</p>
+      <p class="hero-bio">{{ t.home.bio }} {{ t.home.bio_extra }}</p>
 
-    <div class="profile-custom-text">
-      Data Engineer, especializado en el <b>diseño y gestión de productos de Machine Learning</b>. Con <b>8 años de experiencia</b> en empresas de software, consultoría, academia y sector público.  
-      <br>
-      <br>
-      Motivado por desarrollar soluciones de calidad e impacto.  Con perfil analítico, fanático de las <b>buenas prácticas de código</b>, prototipar pensando en producción, y enfocado en <b>detectar las necesidades del negocio</b> para construir las <b>mejores soluciones técnicas</b>.<br>
-      <br>
-      Actualmente, liderando proyectos de <b>Image Recognition</b> para el sector retail y personalización de Ads con <b>Generative AI.</b>
-    </div>
+      <div class="hero-actions">
+        <a href="{{ t.nav.cv_url | prepend: site.baseurl }}" class="btn btn--primary">{{ t.home.cta_cv }}</a>
+        <a href="{{ t.nav.posts_url | prepend: site.baseurl }}" class="btn btn--outline">{{ t.home.cta_posts }}</a>
+      </div>
 
-    <div class="profile-sidebar-links">
-      {% if site.author.email %}
-        <a href="mailto:{{ site.author.email }}" title="Email"><i class="fas fa-envelope"></i></a>
-      {% endif %}
-      {% if site.author.linkedin %}
-        <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      {% endif %}
-      {% if site.author.github %}
-        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
-      {% endif %}
-      {% if site.author.twitter %}
-        <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a>
-      {% endif %}
+      <div class="hero-social">
+        {% if site.author.email %}
+          <a href="mailto:{{ site.author.email }}" title="Email"><i class="fas fa-envelope"></i></a>
+        {% endif %}
+        {% if site.author.linkedin %}
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        {% endif %}
+        {% if site.author.github %}
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        {% endif %}
+        {% if site.author.twitter %}
+          <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a>
+        {% endif %}
+      </div>
     </div>
   </div>
+</section>
 
-  </div>
-  </div>
-</div>
+<section class="home-section">
+  <h2 class="home-section-title">{{ t.home.latest_posts }}</h2>
 
-<style>
-  /* Estilos para el diseño de dos columnas */
-  .home-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
-    gap: 30px; /* Espacio entre las columnas */
-    max-width: 1000px; /* Ancho máximo para el contenido */
-    margin: 30px auto; /* Centrar el contenedor */
-    padding: 0 20px; /* Espacio a los lados */
-  }
-
-  .profile-sidebar {
-    flex: 1;
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center; /* AHORA: Centra todo el contenido de texto e imagen */
-    align-self: flex-start; /* Alinea el sidebar arriba */
-  }
-
-  .catalogue-main {
-    flex: 1; /* El catálogo tomará el espacio restante */
-    min-width: 300px; /* Ancho mínimo para que el catálogo no se comprima demasiado */
-  }
-
-  /* Estilos para la imagen y texto del perfil */
-  .profile-sidebar-img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 2px #ddd;
-    /* --- Propiedades para centrar la imagen --- */
-    display: block; /* La imagen se comporta como un bloque */
-    margin-left: auto; /* Margen izquierdo automático */
-    margin-right: auto; /* Margen derecho automático */
-  }
-
-  .profile-sidebar-name {
-    font-size: 3em;
-    color: #555 ;
-    font-family: 'Helvetica Neue';
-    margin-top: 0;
-    margin-bottom: 10px; /* Ajusta el margen si es necesario */
-    color: #333;
-    text-align: center; /* Asegura que el nombre esté centrado si el sidebar no lo está */
-  }
-
-  .profile-sidebar-bio {
-    font-size: 0.95em;
-    line-height: 1.5;
-    color: #555;
-    margin-bottom: 20px;
-  }
-
-  .profile-custom-text {
-    color: #555 ;
-    font-family: sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.6; /* Ajustado para mejor legibilidad */
-    text-align: left; /* Mantén este texto alineado a la izquierda */
-  } 
-
-  .profile-sidebar-links a {
-    margin: 0 8px;
-    color: #3a3939;
-    text-decoration: none;
-    font-size: 1.5em;
-  }
-  .profile-sidebar-links a:hover {
-    text-decoration: underline;
-  }
-
+  {% assign lang_posts = site.posts | where: "lang", current_lang %}
+  {% if lang_posts.size > 0 %}
+    <div class="post-grid">
+      {% for post in lang_posts limit: 6 %}
+        {% include catalogue_item.html %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="home-empty">{{ t.home.no_posts }}</p>
+  {% endif %}
+</section>

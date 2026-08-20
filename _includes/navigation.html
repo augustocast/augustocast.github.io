@@ -1,14 +1,19 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[current_lang] %}
+
 <nav class="nav">
   <div class="nav-container">
-    <a href="{{ site.baseurl }}/">
+    <a href="{{ t.nav.home_url | prepend: site.baseurl }}">
       <h2 class="nav-title">{{ site.title }}</h2>
     </a>
-    <ul>
-      <li><a href="{{ '/posts' | prepend: site.baseurl }}">Posts</a></li>
-      <!-- <li><a href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li> -->
-      <li><a href="{{ '/lecturas' | prepend: site.baseurl }}">Lecturas</a></li>
-      <li><a href="{{ '/links' | prepend: site.baseurl }}">Links</a></li>
-      <li><a href="{{ '/cv' | prepend: site.baseurl }}">CV</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul>
+        <li><a href="{{ t.nav.posts_url | prepend: site.baseurl }}">{{ t.nav.posts }}</a></li>
+        <li><a href="{{ t.nav.reads_url | prepend: site.baseurl }}">{{ t.nav.reads }}</a></li>
+        <li><a href="{{ t.nav.links_url | prepend: site.baseurl }}">{{ t.nav.links }}</a></li>
+        <li><a href="{{ t.nav.cv_url | prepend: site.baseurl }}">{{ t.nav.cv }}</a></li>
+      </ul>
+      {% include language-switcher.html %}
+    </div>
   </div>
 </nav>

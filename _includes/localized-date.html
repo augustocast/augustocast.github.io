@@ -1,0 +1,11 @@
+{%- comment -%}
+  Usage: {% include localized-date.html date=post.date lang=current_lang %}
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang] -%}
+{%- assign month_index = include.date | date: "%m" | times: 1 | minus: 1 -%}
+{%- assign month_name = t.date.months[month_index] -%}
+{%- if t.date.format == "day_month_year" -%}
+{{ include.date | date: "%-d" }} de {{ month_name }} de {{ include.date | date: "%Y" }}
+{%- else -%}
+{{ month_name }} {{ include.date | date: "%-d, %Y" }}
+{%- endif -%}

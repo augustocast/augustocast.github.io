@@ -2,9 +2,12 @@
 layout: default
 ---
 
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[current_lang] %}
+
 <div class="post">
   <div class="post-info">
-    <span>Written by</span>
+    <span>{{ t.post_info.written_by }}</span>
     {% if page.author %}
         {{ page.author }}
     {% else %}
@@ -13,7 +16,7 @@ layout: default
 
     {% if page.date %}
       <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <span>{{ t.post_info.on }}&nbsp;</span><time datetime="{{ page.date }}">{% include localized-date.html date=page.date lang=current_lang %}</time>
     {% endif %}
   </div>
 
@@ -32,13 +35,28 @@ layout: default
   {% include disqus_comments.html %}
 {% endif %}
 
-<div class="pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+{% assign lang_posts = site.posts | where: "lang", current_lang %}
+{% assign next_post = nil %}
+{% assign previous_post = nil %}
+{% for post in lang_posts %}
+  {% if post.url == page.url %}
+    {% assign prev_idx = forloop.index0 | minus: 1 %}
+    {% if forloop.index0 > 0 %}
+      {% assign next_post = lang_posts[prev_idx] %}
+    {% endif %}
+    {% unless forloop.last %}
+      {% assign next_idx = forloop.index %}
+      {% assign previous_post = lang_posts[next_idx] %}
+    {% endunless %}
   {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+{% endfor %}
+<div class="pagination">
+  {% if next_post %}
+    <a href="{{ next_post.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if previous_post %}
+    <a href="{{ previous_post.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
   {% endif %}
 
-  <a href="#" class="top">Top</a>
+  <a href="#" class="top">{{ t.pagination.top }}</a>
 </div>

@@ -1,0 +1,10 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
+<div class="lang-switch" aria-label="{{ site.data.i18n[current_lang].lang_switch.aria }}">
+  {% if current_lang == "es" %}
+    <span class="is-active">ES</span>
+    <a href="{{ page.translation_url | default: '/en/' | prepend: site.baseurl }}">EN</a>
+  {% else %}
+    <a href="{{ page.translation_url | default: '/' | prepend: site.baseurl }}">ES</a>
+    <span class="is-active">EN</span>
+  {% endif %}
+</div>

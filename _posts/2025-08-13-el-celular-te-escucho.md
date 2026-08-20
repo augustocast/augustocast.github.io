@@ -6,6 +6,7 @@ date: 2025-08-13 00:52:27 -0300
 tags: [ads, cluster, data]
 description: "Te cuento 3 razones por las que esto no pasa"
 sticky: true
+translation_url: /en/2025-08-13-does-your-phone-listen-to-you/
 ---
 
 

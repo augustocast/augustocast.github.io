@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Posts"
+lang: en
+permalink: /en/posts/
+translation_url: /posts/
+---
+
+<div class="catalogue">
+  {% assign en_posts = site.posts | where: "lang", "en" %}
+  {% for post in en_posts %}
+    {% include catalogue_item.html %}
+  {% endfor %}
+</div>
